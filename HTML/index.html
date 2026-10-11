@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="decription" content="">
+    <meta name="Author" content="Ayokanmi Samuel">
+    <title>HTML-Practice</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <style>
+        table,th,td,caption{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <!-- 
+        - element that should be in the header element:
+        Navbar
+        header of page which is h1 element
+         -->
+        <h1>HTML- Practice</h1>
+
+    </header>
+    <main>
+        <!-- here contain the main content of of a web page -->
+         <table>
+            <caption>400 LEVEL PHYSICS DEPARTMENT FIRST SEMESTER RESULT</caption>
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th>COURSE CODE</th>
+                    <th>COURSE TITLE</th>
+                    <th>COURSE UNIT</th>
+                    <th>SCORE</th>
+                    <th>GRADE</th>
+                    <th>REMARKS</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>ENT 402</td>
+                    <td>VENTURE CREATION & GROWTH</td>
+                    <td>2</td>
+                    <td>75</td>
+                    <td>A</td>
+                    <td>PASS</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>PHY 400</td>
+                    <td>RESEARCH PROJECT</td>
+                    <td>6</td>
+                    <td>70</td>
+                    <td>A</td>
+                    <td>PASS</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>PHY 402</td>
+                    <td>SOLID STATE PHYSICS II</td>
+                    <td>3</td>
+                    <td>85</td>
+                    <td>A</td>
+                    <td>PASS</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>PHY 406</td>
+                    <td>COMPUTATIONAL PHYSICS </td>
+                    <td>3</td>
+                    <td>85</td>
+                    <td>A</td>
+                    <td>PASS</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>PHY 408</td>
+                    <td>MATHEMATICAL METHOD IN  PHYSICS II</td>
+                    <td>3</td>
+                    <td>65</td>
+                    <td>B</td>
+                    <td>PASS</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>PHY 412</td>
+                    <td>QUANTUM MECHANICS II</td>
+                    <td>3</td>
+                    <td>77</td>
+                    <td>A</td>
+                    <td>PASS</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>PHY 420</td>
+                    <td>ACCOUSTICS II</td>
+                    <td>3</td>
+                    <td>90</td>
+                    <td>A</td>
+                    <td>PASS</td>
+                </tr>
+            </tbody>
+            <tfoot>  
+                <tr>
+                    <td colspan="7" style="text-align: center;">EXCELLENT RESULT KEEP IT UP</td>
+                </tr>
+            </tfoot>
+         </table>
+         <!-- 
+          || *forms
+          -- fieldeset
+          -legend
+          let create sign up page
+          
+         -->
+          <form action="" method="get">
+            <!-- sign- up with Input element and input element accept text, number, password as a form of input text area is also form of ipnput -->
+            <fieldset>
+                <legend>SIGN UP PAGE</legend>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input id="firstName" type="text" placeholder="First Name" required>
+                </p>
+                <p>
+                    <label for="lasttName">last Name:</label>
+                    <input id="lastName" type="text" placeholder="last Name"  required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input id="email" type="Email" placeholder="enter your maail" required>
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" placeholder="Password" minlength="8" required>
+                </p>
+                <p>
+                    <label for="phone">Phone Number:</label>
+                    <input id="phone" type="tel" placeholder="+2348000000000"  pattern="\+?[0-9]{13}" required>
+                    <!-- <input id="phone" type="tel" placeholder="+234-800-000-0000"  pattern="\+234\s-\s[0-9]{3}\s-\s[0-9]{3}\s-\s[0-9]{4}" required> -->
+                </p>
+                <button type="submit">submit</button>
+                <button type="reset">reset</button>
+            </fieldset>
+            <fieldset>
+                <legend>Radio Button</legend>
+                <ol>
+                    <li>Choose your best favorite web languages:</li>
+                        <input id="html" type="radio" name="fav_web_lang">
+                        <label for="html">HTML</label><br>
+                        <input id="css" type="radio" name="fav_web_lang">
+                        <label for="css">CSS</label><br>
+                        <input id="javascript" type="radio" name="fav_web_lang">
+                        <label for="javascript">JAVASCRIPT</label>
+                    <li>Choose your favorite resort:</li>
+                        <input type="radio" id="ogbudu" name="fav_resort">
+                        <label for="ogbudu">OGBUDU MOUNTAIN RESORT (CROSS RIVER STATE)</label><br>
+                        <input type="radio" id="Lacam" name="fav_resort">
+                        <label for="Lacam">LA CAMPAGNE TROPICAL BEACH RESORT (LAGOS STATE)</label><br>
+                        <input type="radio" id="inagbe" name="fav_resort">
+                        <label for="inagbe">INAGBE GRAND BEACH RESORT (LAGOS STATE)</label><br>
+                    <li>Choose your favorite food:</li>
+                        <input type="radio" id="veget" name="fav_food">
+                        <label for="veget"> VEGETABLE AND POUNDED YAM</label><br>
+                        <input type="radio" id="ribep" name="fav_food">
+                        <label for="ribep"> RICE,BEANS AND PLANTAIN</label><br>
+                        <input type="radio" id="bredbean" name="fav_food">
+                        <label for="bredbean"> BREAD AND BEANS</label>
+                </ol>
+
+            </fieldset>
+            <fieldset>
+                <legend>Checked Box</legend>
+                <p>choose two of your favourite car:</p>
+                 <input type="checkbox" id="vehicle1" name="vehicle1" >
+                 <label for="vehicle1">Toyota</label><br>
+                 <input type="checkbox" id="vehicle2" name="vehicle2" >
+                 <label for="vehicle2">Nissan</label><br>
+                 <input type="checkbox" id="vehicle3" name="vehicle3" >
+                 <label for="vehicle3">Hyounda</label>
+            </fieldset>
+            <fieldset>
+                <legend>Message Box</legend>
+                <label for="message">YOUR MESSAGE</label><br>
+                <textarea id="message" name="message" placeholder="Type your message here" cols="30" rows="10" required></textarea>
+            </fieldset>
+          </form>
+          <br>
+          <video src="video_file/pastorpoju_1694240569625559107(360P).mp4 " width="320" height="240" controls  ></video><br>
+          
+          <iframe src="video_file/pastorpoju_1694240569625559107(360P).mp4" frameborder="0" width="600" height="450" style="border: 0;"allowfullscreen="" loading="lazy" title="Our Location"></iframe><br>
+          <audio src="audio_file/FAVOUR SURROUNDS ME LIKE A SHIELD _ EVANG.LAWRENCE OYOR(M4A_128K).m4a" controls></audio>
+          
+    </main>
+    <footer style="text-align: center;">
+      Copyright &copy;Ayokanmi Samuel
+    </footer>
+</body>
+</html>
